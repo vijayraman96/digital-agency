@@ -1,0 +1,227 @@
+.btn{
+    color:white;
+    background-color: transparent;
+    border:1.5px solid #ff0066;
+    padding:15px 20px;
+    border-radius:0
+}
+
+/******header starts here ***********/
+#header1{
+    background-color: transparent !important;
+    position: fixed;
+    /* margin:auto; */
+    z-index: 1030;
+    margin:auto !important
+}
+.navbar-toggler{
+    border:1px solid #ff0066 !important;
+}
+.navbar-toggler-icon{
+    background-color: #ff0066;
+}
+.nav-link{
+    padding:1em 0.8em !important;
+    color:white !important;
+    display: inline-block;
+}
+.navbar-collapse{
+    position: absolute;
+    z-index:999;
+    /* background-color: #ff0066; */
+  
+    width:92%
+}
+#logo{
+    color:white
+}
+.nav-link::before{
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #ff0066;
+}
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+.nav-link-ltr:hover::before {
+    width: 3%;
+  }
+.log1{
+    margin:auto !important
+}
+.bi-search{
+    width:20px;
+    height:20px;
+    color:white
+}
+/******header starts here ***********/
+
+/***********home section starts here *********/
+#home-section{
+    background-image: url('../images/adult-aesthetics-art-attractive-458497.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height:100vh; */
+    padding:100px 0px
+
+}
+#underline1{
+    border-bottom:5px solid #ff0066 ;
+    width:10%
+}
+#underline2a{
+    border-bottom:2px solid #ff0066 ;
+    width:20%
+}
+#underline2b{
+    border-bottom:2px solid #ff0066 ;
+    width:20%
+}
+#underline2c{
+    border-bottom:2px solid #ff0066 ;
+    width:20%
+}
+.home-section-col-block1{
+    
+    display:flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:50px
+}
+.bi-clipboard-data{
+    margin:25px 0px;
+    color:#ff0066
+}
+.bi-pie-chart-fill{
+    margin:25px 0px;
+    color:#ff0066
+}
+.bi-shuffle{
+    margin:25px 0px;
+    color:#ff0066
+}
+.card:hover .bi-clipboard-data{
+    color:white
+}
+.card:hover .bi-pie-chart-fill{
+    color:white
+}
+.card:hover .bi-shuffle{
+    color:white
+}
+.card:hover #underline2a{
+    border-bottom:2px solid white
+}
+.card:hover #underline2b{
+    border-bottom:2px solid white
+}
+.card:hover #underline2c{
+    border-bottom:2px solid white
+}
+.card{
+    background-color: #0d0d0d;
+    margin:15px 2px
+}
+.card:hover{
+    background-color: #ff0066;
+}
+#card-title-1{
+    color:white
+}
+#card-title-2{
+    color:white
+}
+#card-title-3{
+    color:white
+}
+#card-para-1{
+    color:white
+}
+#card-para-2{
+    color:white
+}
+#card-para-3{
+    color:white
+}
+
+/***********home section ends here *********/
+
+
+/************responsive design**********/
+@media(max-width:375px){
+   .nav-item{
+       margin:5px;
+       border:2px solid white;
+       background-color:#ff0066 ;
+   }
+   .navbar-collapse{
+    position: absolute;
+    z-index:999;
+    /* background-color: #ff0066; */
+    top:100px;
+    width:92%
+    }
+    .home-section-col-block1{
+        height:auto;
+       
+    }
+}
+@media(min-width:376px) and (max-width:576px){
+    .nav-item{
+        margin:5px;
+        border:2px solid white;
+        background-color:#ff0066 ;
+    }
+    .navbar-collapse{
+        position: absolute;
+        z-index:999;
+        /* background-color: #ff0066; */
+        top:100px;
+        width:92%
+    }
+    .home-section-col-block1{
+        height:auto;
+       
+    }
+}
+@media(min-width:577px) and (max-width:760px){
+    .nav-item{
+        margin:5px;
+        border:2px solid white;
+        background-color:#ff0066 ;
+    }
+    .navbar-collapse{
+        position: absolute;
+        z-index:999;
+        /* background-color: #ff0066; */
+        top:100px;
+        width:92%
+    }
+}
+@media(min-width:761px) and (max-width:992px){
+    .nav-item{
+        margin:5px;
+        border:2px solid white;
+        background-color:#ff0066 ;
+    }
+    .navbar-collapse{
+        position: absolute;
+        z-index:999;
+        /* background-color: #ff0066; */
+        top:100px;
+        width:92%
+    }
+    .card-c{
+        width:20.5em
+    }
+    
+}
+@media(min-width:992px){}
+
+/************responsive design ends here**********/
