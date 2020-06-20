@@ -5,7 +5,11 @@
     padding:15px 20px;
     border-radius:0
 }
-
+.btn:hover{
+    background-color:#ff0066 ;
+    color:white;
+    border:1.5px solid #ff0066
+}
 /******header starts here ***********/
 #header1{
     background-color: transparent !important;
@@ -216,6 +220,41 @@
 
 /************vertical line ends here*********/
 
+/***************carousel title starts here***********/
+#carousel-title{
+    padding:50px 0px
+}
+#underline4{
+    border-bottom:3px solid #ff0066 ;
+    width:25%
+}
+.carousel-title-text{
+    color:#ff0066
+}
+#carousel-title-button{
+    color:black
+}
+#carousel-title-button:hover{
+    color:white
+}
+.carousel-title{
+    display:flex;
+    justify-content: space-between;
+    align-items:center
+}
+/***************carousel title ends here***********/
+/*****************carousel slider starts here *************/
+#carousel{
+    padding:50px 0px
+}
+.owl-theme .owl-dots .owl-dot span{
+    background: #ff0066;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background:#ffb3d1;
+}
+
+/*****************carousel slider ends here *************/
 /************responsive design**********/
 @media(max-width:375px){
    .nav-item{
@@ -239,8 +278,13 @@
     .services-box7,.services-box8,.services-box9 {
        width:30em
     }
-    #underline3{
+    #underline3,#undrline4{
          width:20%
+    }
+    .carousel-title{
+        display:flex;
+      flex-direction: column;
+        align-items:flex-start
     }
 }
 @media(min-width:376px) and (max-width:576px){
@@ -265,8 +309,13 @@
     .services-box7,.services-box8,.services-box9 {
         width:30em
      }
-     #underline3{
+     #underline3,#undrline4{
         width:20%
+    }
+    .carousel-title{
+        display:flex;
+      flex-direction: column;
+        align-items:flex-start
     }
 }
 @media(min-width:577px) and (max-width:760px){
@@ -287,7 +336,7 @@
     .services-box7,.services-box8,.services-box9{
         width:30em
      }
-     #underline3{
+     #underline3,#undrline4{
         width:10%
     }
 }
@@ -312,7 +361,7 @@
     .services-box7,.services-box8,.services-box9{
         width:20em
      }
-     #underline3{
+     #underline3,#undrline4{
         width:10%
     }
 }
@@ -322,7 +371,7 @@
     .services-box7,.services-box8,.services-box9{
         width:18em
      }
-     #underline3{
+     #underline3,#undrline4{
         width:10%
     }
 }
