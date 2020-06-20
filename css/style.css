@@ -14,6 +14,13 @@
     z-index: 1030;
     margin:auto !important
 }
+#header2{
+    background-color: transparent !important;
+    /* position: fixed; */
+    /* margin:auto; */
+    z-index: 1030;
+    margin:auto !important
+}
 .navbar-toggler{
     border:1px solid #ff0066 !important;
 }
@@ -67,7 +74,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     /* height:100vh; */
-    padding:100px 0px
+    padding:100px 0px;
+    background-attachment: fixed;
 
 }
 #underline1{
@@ -153,6 +161,61 @@
 /***********home section ends here *********/
 
 
+/**********services starts here*****/
+#services{
+    padding:100px 0px
+}
+
+#underline3{
+    border-bottom:3px solid #ff0066 ;
+    width:5%
+}
+.services-block1-text h4{
+    color:#ff0066
+}
+.services-box1,.services-box2,.services-box3,
+.services-box4,.services-box5,.services-box6,
+.services-box7,.services-box8,.services-box9 {
+    background-color: #d9d9d9;
+    display:flex;
+    justify-content: space-between;
+    padding:30px 20px;
+    margin:10px 10px 10px 0px;
+    width:22.5em
+}
+.services-block2{
+    display:flex;
+    flex-wrap: wrap;
+}
+.services-block3{
+    display:flex;
+    flex-wrap: wrap;
+}
+.services-block4{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/**********services ends here*****/
+
+/************vertical line starts here*********/
+
+#vertical-line{
+    padding:0px 0px 50px 0px;
+}
+.vl-block{
+    display:flex;
+    justify-content: center;
+}
+.vl {
+        border-left: 2px solid #ff0066 ;
+        height: 50px;
+}
+
+
+
+/************vertical line ends here*********/
+
 /************responsive design**********/
 @media(max-width:375px){
    .nav-item{
@@ -170,6 +233,14 @@
     .home-section-col-block1{
         height:auto;
        
+    }
+    .services-box1,.services-box2,.services-box3,
+    .services-box4,.services-box5,.services-box6,
+    .services-box7,.services-box8,.services-box9 {
+       width:30em
+    }
+    #underline3{
+         width:20%
     }
 }
 @media(min-width:376px) and (max-width:576px){
@@ -189,6 +260,14 @@
         height:auto;
        
     }
+    .services-box1,.services-box2,.services-box3,
+    .services-box4,.services-box5,.services-box6,
+    .services-box7,.services-box8,.services-box9 {
+        width:30em
+     }
+     #underline3{
+        width:20%
+    }
 }
 @media(min-width:577px) and (max-width:760px){
     .nav-item{
@@ -202,6 +281,14 @@
         /* background-color: #ff0066; */
         top:100px;
         width:92%
+    }
+    .services-box1,.services-box2,.services-box3,
+    .services-box4,.services-box5,.services-box6,
+    .services-box7,.services-box8,.services-box9{
+        width:30em
+     }
+     #underline3{
+        width:10%
     }
 }
 @media(min-width:761px) and (max-width:992px){
@@ -220,8 +307,24 @@
     .card-c{
         width:20.5em
     }
-    
+    .services-box1,.services-box2,.services-box3,
+    .services-box4,.services-box5,.services-box6,
+    .services-box7,.services-box8,.services-box9{
+        width:20em
+     }
+     #underline3{
+        width:10%
+    }
 }
-@media(min-width:992px){}
+@media(min-width:992px) and (max-width:1100px){
+    .services-box1,.services-box2,.services-box3,
+    .services-box4,.services-box5,.services-box6,
+    .services-box7,.services-box8,.services-box9{
+        width:18em
+     }
+     #underline3{
+        width:10%
+    }
+}
 
 /************responsive design ends here**********/
