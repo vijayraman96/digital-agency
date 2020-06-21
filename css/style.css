@@ -324,6 +324,76 @@
     max-width:15em
 }
 /****************about ends here*************/
+/***********Clients starts here*************/
+#clients{
+    padding:50px 0px;
+}
+.client-image-container{
+    position:relative
+}
+#client-image1{
+    width:100%;
+    height:auto;
+    z-index:10;
+    object-fit: contain;
+}
+.client-box{
+    width:100px;
+    height:100px;
+    background-color: #ff0066;
+    position:absolute;
+    right:-0.5em;
+    bottom:-0.5em;
+    z-index:-10
+}
+#underline6{
+    border-bottom:3px solid #ff0066 ;
+    width:25%
+}
+.client-block1-text h4{
+    color:#ff0066
+}
+/***********Clients ends here*************/
+/***********Clients company starts here***********/
+#client-companies{
+    padding:50px 0px
+}
+.companies{
+    display:flex;
+    flex-wrap:wrap
+}
+.agency{
+    width:5em
+}
+/***********Clients company ends here***********/
+/**********LAtest News starts here*********/
+#latest-news{
+    padding:50px 0px;
+}
+.latest-news-container h4{
+    color:#ff0066
+}
+.news{
+    position:relative;
+ 
+} 
+#latest-news-carousel{
+    padding:50px 0px
+}
+.latest-text-container h3{
+    position:absolute;
+    bottom:10%;
+    left:40%;
+    color:white
+}
+.latest-text-container h5{
+    position:absolute;
+    bottom:3%;
+    left:10%;
+    color:white;
+    text-align: center;
+}
+/**********LAtest News ends here*********/
 /************responsive design**********/
 @media(max-width:375px){
    .nav-item{
@@ -347,13 +417,20 @@
     .services-box7,.services-box8,.services-box9 {
        width:30em
     }
-    #underline3,#undrline4,#underline5{
+    #underline3,#undrline4,#underline5,#underline6{
          width:20%
     }
     .carousel-title,.about-title{
         display:flex;
       flex-direction: column;
         align-items:flex-start
+    }
+    .latest-text-container h3{
+        position:absolute;
+        bottom:18%;
+        right:5%;
+        left:35%;
+        color:white
     }
 }
 @media(min-width:376px) and (max-width:576px){
@@ -378,13 +455,20 @@
     .services-box7,.services-box8,.services-box9 {
         width:30em
      }
-     #underline3,#undrline4,#underline5{
+     #underline3,#undrline4,#underline5,#underline6{
         width:20%
     }
     .carousel-title{
         display:flex;
       flex-direction: column;
         align-items:flex-start
+    }
+    .latest-text-container h3{
+        position:absolute;
+        bottom:18%;
+        left:35%;
+        right:5%;
+        color:white
     }
 }
 @media(min-width:577px) and (max-width:760px){
@@ -405,8 +489,14 @@
     .services-box7,.services-box8,.services-box9{
         width:30em
      }
-     #underline3,#undrline4,#underline5{
+     #underline3,#undrline4,#underline5,#underline6{
         width:10%
+    }
+    .latest-text-container h3{
+        position:absolute;
+        bottom:18%;
+        left:40%;
+        color:white
     }
 }
 @media(min-width:761px) and (max-width:992px){
@@ -430,13 +520,19 @@
     .services-box7,.services-box8,.services-box9{
         width:20em
      }
-     #underline3,#undrline4,#underline5{
+     #underline3,#undrline4,#underline5,#underline6{
         width:10%
     }
     .about-text-block{
         display:flex;
         flex-direction:row;
         
+    }
+    .latest-text-container h3{
+        position:absolute;
+        bottom:18%;
+        left:40%;
+        color:white
     }
 }
 @media(min-width:992px) and (max-width:1100px){
@@ -445,13 +541,19 @@
     .services-box7,.services-box8,.services-box9{
         width:18em
      }
-     #underline3,#undrline4,#underline5{
+     #underline3,#undrline4,#underline5,#underline6{
         width:10%
     }
     #about-block1-image,#about-block2-image{
         width:100%;
         height:12em;
         max-width:400px
+    }
+    .latest-text-container h3{
+        position:absolute;
+        bottom:18%;
+        left:35%;
+        color:white
     }
 }
 
