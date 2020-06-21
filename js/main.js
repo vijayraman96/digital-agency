@@ -34,3 +34,12 @@ $('#latest-carousel').owlCarousel({
         }
     }
 });
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 600) {
+        // $("#header1").addClass(".back");
+        $(".navbar").css("background-color","#0f0f0a")
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".navbar").css("background-color","transparent")
+    }
+});

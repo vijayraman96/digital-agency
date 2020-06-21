@@ -1,18 +1,51 @@
+h1{
+    font-size:64px;
+    font-family: 'Fira Sans', sans-serif
+}
+h2{font-size:48px;font-family: 'Fira Sans', sans-serif}
+h3{font-size:32px;font-family: 'Fira Sans', sans-serif}
+h4{
+    font-size:24px;
+    font-family: 'Fira Sans', sans-serif
+}
+h5{
+    font-size:22px;
+    font-family: 'Fira Sans', sans-serif
+}
+h6{
+    font-size:20px;
+    font-family: 'Fira Sans', sans-serif
+}
+p,a{
+    font-size:18px;
+    font-family: 'Amiri', serif;
+}
 .btn{
     color:white;
     background-color: transparent;
     border:1.5px solid #ff0066;
     padding:15px 20px;
-    border-radius:0
+    border-radius:0;
+    font-size:18px;
+    font-family: 'Amiri', serif;
 }
 .btn:hover{
     background-color:#ff0066 ;
     color:white;
     border:1.5px solid #ff0066
 }
+.navbar{
+    background-color: transparent;
+}
+.back{
+    /* background-color:#3d3d29; */
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
 /******header starts here ***********/
 #header1{
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
     position: fixed;
     /* margin:auto; */
     z-index: 1030;
@@ -363,7 +396,8 @@
     flex-wrap:wrap
 }
 .agency{
-    width:5em
+    width:5em;
+    text-align: center;
 }
 /***********Clients company ends here***********/
 /**********LAtest News starts here*********/
@@ -507,7 +541,16 @@ justify-content: flex-end;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        }
+    }
+    .track{
+        justify-content: center;
+    }
+    h1{
+        font-size:30px
+    }
+    h4{
+        font-size:22px
+    }
 }
 @media(min-width:376px) and (max-width:576px){
     .nav-item{
@@ -556,6 +599,12 @@ justify-content: flex-end;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        }
+        h1{
+            font-size:30px
+        }
+        h4{
+            font-size:22px
         }
 }
 @media(min-width:577px) and (max-width:760px){
