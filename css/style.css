@@ -22,17 +22,22 @@ p,a{
 }
 .btn{
     color:white;
-    background-color: transparent;
-    border:1.5px solid #ff0066;
+    /* background-color: transparent; */
+    border:1.5px solid #e9204f;
+    background: linear-gradient(to right, #e9204f 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
     padding:15px 20px;
     border-radius:0;
     font-size:18px;
     font-family: 'Amiri', serif;
 }
 .btn:hover{
-    background-color:#ff0066 ;
+    /* background-color:#e9204f ; */
     color:white;
-    border:1.5px solid #ff0066
+    background-position: left bottom;
+    border:1.5px solid #e9204f
 }
 .navbar{
     background-color: transparent;
@@ -59,10 +64,10 @@ p,a{
     margin:auto !important
 }
 .navbar-toggler{
-    border:1px solid #ff0066 !important;
+    border:1px solid #e9204f !important;
 }
 .navbar-toggler-icon{
-    background-color: #ff0066;
+    background-color: #e9204f;
 }
 .nav-link{
     padding:1em 0.8em !important;
@@ -72,7 +77,7 @@ p,a{
 .navbar-collapse{
     position: absolute;
     z-index:999;
-    /* background-color: #ff0066; */
+    /* background-color: #e9204f; */
   
     width:92%
 }
@@ -84,7 +89,7 @@ p,a{
     height: 2px;
     content: "";
     position: absolute;
-    background-color: #ff0066;
+    background-color: #e9204f;
 }
 .nav-link-ltr::before {
     width: 0%;
@@ -116,19 +121,19 @@ p,a{
 
 }
 #underline1{
-    border-bottom:5px solid #ff0066 ;
+    border-bottom:5px solid #e9204f ;
     width:10%
 }
 #underline2a{
-    border-bottom:2px solid #ff0066 ;
+    border-bottom:2px solid #e9204f ;
     width:20%
 }
 #underline2b{
-    border-bottom:2px solid #ff0066 ;
+    border-bottom:2px solid #e9204f ;
     width:20%
 }
 #underline2c{
-    border-bottom:2px solid #ff0066 ;
+    border-bottom:2px solid #e9204f ;
     width:20%
 }
 .home-section-col-block1{
@@ -141,15 +146,15 @@ p,a{
 }
 .bi-clipboard-data{
     margin:25px 0px;
-    color:#ff0066
+    color:#e9204f
 }
 .bi-pie-chart-fill{
     margin:25px 0px;
-    color:#ff0066
+    color:#e9204f
 }
 .bi-shuffle{
     margin:25px 0px;
-    color:#ff0066
+    color:#e9204f
 }
 .card:hover .bi-clipboard-data{
     color:white
@@ -174,7 +179,7 @@ p,a{
     margin:15px 2px
 }
 .card:hover{
-    background-color: #ff0066;
+    background-color: #e9204f;
 }
 #card-title-1{
     color:white
@@ -204,11 +209,11 @@ p,a{
 }
 
 #underline3{
-    border-bottom:3px solid #ff0066 ;
+    border-bottom:3px solid #e9204f ;
     width:5%
 }
 .services-block1-text h4{
-    color:#ff0066
+    color:#e9204f
 }
 .services-box1,.services-box2,.services-box3,
 .services-box4,.services-box5,.services-box6,
@@ -245,7 +250,7 @@ p,a{
     justify-content: center;
 }
 .vl {
-        border-left: 2px solid #ff0066 ;
+        border-left: 2px solid #e9204f ;
         height: 50px;
 }
 
@@ -258,11 +263,11 @@ p,a{
     padding:50px 0px
 }
 #underline4{
-    border-bottom:3px solid #ff0066 ;
+    border-bottom:3px solid #e9204f ;
     width:25%
 }
 .carousel-title-text{
-    color:#ff0066
+    color:#e9204f
 }
 #carousel-title-button{
     color:black
@@ -275,13 +280,23 @@ p,a{
     justify-content: space-between;
     align-items:center
 }
+#works-carousel #carousel-image1{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#works-carousel:hover #carousel-image1{
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
 /***************carousel title ends here***********/
 /*****************carousel slider starts here *************/
 #carousel{
     padding:50px 0px
 }
 .owl-theme .owl-dots .owl-dot span{
-    background: #ff0066;
+    background: #e9204f;
 }
 .owl-theme .owl-dots .owl-dot.active span{
     background:#ffb3d1;
@@ -294,11 +309,11 @@ p,a{
 }
 
 #underline5{
-    border-bottom:3px solid #ff0066 ;
+    border-bottom:3px solid #e9204f ;
     width:25%
 }
 .about-title-text{
-    color:#ff0066
+    color:#e9204f
 }
 #about-title-button{
     color:black
@@ -373,18 +388,18 @@ p,a{
 .client-box{
     width:100px;
     height:100px;
-    background-color: #ff0066;
+    background-color: #e9204f;
     position:absolute;
     right:-0.5em;
     bottom:-0.5em;
     z-index:-10
 }
 #underline6{
-    border-bottom:3px solid #ff0066 ;
+    border-bottom:3px solid #e9204f ;
     width:25%
 }
 .client-block1-text h4{
-    color:#ff0066
+    color:#e9204f
 }
 /***********Clients ends here*************/
 /***********Clients company starts here***********/
@@ -405,7 +420,7 @@ p,a{
     padding:50px 0px;
 }
 .latest-news-container h4{
-    color:#ff0066
+    color:#e9204f
 }
 .news{
     position:relative;
@@ -430,16 +445,27 @@ p,a{
 /**********LAtest News ends here*********/
 /************footer1*************/
 .fa{
-    /* width:80px;
-    height:80px; */
-    border:2px solid #ff0066;
+    
+    border:2px solid #e9204f;
     padding:15px;
     border-radius:50%;
     margin:5px;
     color:white;
     font-size:30px
 }
+.fa:hover{
+    animation-name: example;
+    animation-duration: 0.5s;
+    color:#e9204f;
+    transition:0.5s ease-in-out;
+}
+@keyframes example{
+0%{position:relative;
+    bottom:0}
 
+100%{position:relative;
+    bottom:10px}
+}
 .footer-section1-title h1{
     color:white;
     text-align: center;
@@ -490,12 +516,12 @@ justify-content: flex-end;
    .nav-item{
        margin:5px;
        border:2px solid white;
-       background-color:#ff0066 ;
+       background-color:#e9204f ;
    }
    .navbar-collapse{
     position: absolute;
     z-index:999;
-    /* background-color: #ff0066; */
+    /* background-color: #e9204f; */
     top:100px;
     width:92%
     }
@@ -530,7 +556,7 @@ justify-content: flex-end;
     }
     .fa{
         
-        border:2px solid #ff0066;
+        border:2px solid #e9204f;
         padding:5px !important;
         border-radius:50%;
         margin:5px
@@ -556,12 +582,12 @@ justify-content: flex-end;
     .nav-item{
         margin:5px;
         border:2px solid white;
-        background-color:#ff0066 ;
+        background-color:#e9204f ;
     }
     .navbar-collapse{
         position: absolute;
         z-index:999;
-        /* background-color: #ff0066; */
+        /* background-color: #e9204f; */
         top:100px;
         width:92%
     }
@@ -611,12 +637,12 @@ justify-content: flex-end;
     .nav-item{
         margin:5px;
         border:2px solid white;
-        background-color:#ff0066 ;
+        background-color:#e9204f ;
     }
     .navbar-collapse{
         position: absolute;
         z-index:999;
-        /* background-color: #ff0066; */
+        /* background-color: #e9204f; */
         top:100px;
         width:92%
     }
@@ -644,12 +670,12 @@ justify-content: flex-end;
     .nav-item{
         margin:5px;
         border:2px solid white;
-        background-color:#ff0066 ;
+        background-color:#e9204f ;
     }
     .navbar-collapse{
         position: absolute;
         z-index:999;
-        /* background-color: #ff0066; */
+        /* background-color: #e9204f; */
         top:100px;
         width:92%
     }
@@ -704,3 +730,6 @@ justify-content: flex-end;
 }
 
 /************responsive design ends here**********/
+/* ,#works-carousel #carousel-image2,#works-carousel #carousel-image3,#works-carousel #carousel-image4,#works-carousel #carousel-image5,#works-carousel #carousel-image6
+
+,#works-carousel:hover #carousel-image2,#works-carousel:hover #carousel-image3,#works-carousel:hover #carousel-image4,#works-carousel:hover #carousel-image5,#works-carousel:hover #carousel-image6 */
