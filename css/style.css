@@ -633,7 +633,8 @@ justify-content: flex-end;
         width:100vw;
         display:inline-flex;
         align-items: center;
-        border:1.5px solid #e9204f;
+        /* border:1.5px solid #e9204f; */
+        background-color: #f3f3f3;
             background: linear-gradient(to right, #e9204f 50%, transparent 50%);
             background-size: 200% 100%;
             background-position: right bottom;
