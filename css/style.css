@@ -606,7 +606,7 @@ justify-content: flex-end;
     .button-container{
 
         height:9vh;
-        width:18em;
+        width:100%;
         display:inline-flex;
         align-items: center;
         border:1.5px solid #e9204f;
@@ -617,7 +617,7 @@ justify-content: flex-end;
         margin:10px 0px !important
         }
         .button-block{
-            width:17em;
+            width:100%;
             display:inline-flex;
             justify-content: space-between;
             align-items: center;
@@ -682,7 +682,7 @@ justify-content: flex-end;
       .button-container{
 
         height:9vh;
-        width:21em;
+        width:100vw;
         display:inline-flex;
         align-items: center;
         border:1.5px solid #e9204f;
@@ -693,7 +693,7 @@ justify-content: flex-end;
         margin:10px 0px !important
         }
         .button-block{
-            width:18em;
+            width:100%;
             display:inline-flex;
             justify-content: space-between;
             align-items: center;
