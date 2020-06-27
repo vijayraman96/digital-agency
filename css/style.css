@@ -628,6 +628,10 @@ padding:20px
 }
 .trademark p{
     color:white;
+   
+}
+.address h4:hover,.address p:hover{
+    color:#e9204f
 }
 .trademark-container {
 display:inline-flex;
@@ -802,6 +806,9 @@ justify-content: flex-end;
             -ms-transition: all 400ms ease-out;
             transition: all 400ms ease-out;
         }
+        .trademark p{
+            text-align: center;
+        }
 
     
 }
@@ -931,6 +938,9 @@ justify-content: flex-end;
             -o-transition: all 400ms ease-out;
             -ms-transition: all 400ms ease-out;
             transition: all 400ms ease-out;
+        }
+        .trademark p{
+            text-align: center;
         }
 
 }
