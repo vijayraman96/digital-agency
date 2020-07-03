@@ -34,12 +34,29 @@ $('#latest-carousel').owlCarousel({
         }
     }
 });
+$("[data-trigger]").on("click", function(){
+    var trigger_id =  $(this).attr('data-trigger');
+    $(trigger_id).toggleClass("show");
+    $('body').toggleClass("offcanvas-active");
+    // $('.nav-link').animate({
+    //     right: '40%',
+    //     opacity:1
+    // },2000, 'linear')
+  
+});
+
+// close button 
+$(".btn-close").click(function(e){
+    $(".navbar-collapse").removeClass("show");
+    $("body").removeClass("offcanvas-active");
+    
+}); 
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 600) {
         // $("#header1").addClass(".back");
-        $(".navbar").css("background-color","#0f0f0a")
+        $("header").css("background-color","#0f0f0a")
     } else {
         //remove the background property so it comes transparent again (defined in your css)
-       $(".navbar").css("background-color","transparent")
+       $("header").css("background-color","transparent")
     }
 });

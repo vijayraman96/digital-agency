@@ -20,7 +20,7 @@ p,a{
     font-size:18px;
     font-family: 'Amiri', serif;
 }
-.btn{
+.btn1{
     color:white;
     /* background-color: transparent; */
     border:1.5px solid #e9204f;
@@ -39,9 +39,7 @@ p,a{
     background-position: left bottom;
     border:1.5px solid #e9204f
 }
-.navbar{
-    background-color: transparent;
-}
+
 .back{
     /* background-color:#3d3d29; */
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -49,19 +47,18 @@ p,a{
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 /******header starts here ***********/
+.offcanvas-header{ display:none; }
+
 #header1{
     /* background-color: transparent !important; */
     position: fixed;
-    /* margin:auto; */
+    /* margin:0.5rem 2rem 0rem 0rem; */
     z-index: 1030;
-    margin:auto !important
+    width:100%
 }
-#header2{
-    background-color: transparent !important;
-    /* position: fixed; */
-    /* margin:auto; */
-    z-index: 1030;
-    margin:auto !important
+.navbar{
+    padding:0.5rem 1rem 0.5rem 0rem;
+    margin:0.4rem 0rem 0rem 0rem
 }
 .navbar-toggler{
     border:1px solid #e9204f !important;
@@ -70,17 +67,14 @@ p,a{
     background-color: #e9204f;
 }
 .nav-link{
-    padding:1em 0.8em !important;
+    padding:0em 0.8em !important;
     color:white !important;
-    display: inline-block;
+    display: block;
+ }
+.btn-outline-danger{
+    border:none
 }
-.navbar-collapse{
-    position: absolute;
-    z-index:999;
-    /* background-color: #e9204f; */
-  
-    width:92%
-}
+
 #logo{
     color:white
 }
@@ -94,12 +88,13 @@ p,a{
 
 .nav-link-ltr::before {
     width: 0%;
-    bottom: 10px;
+    bottom: 20%;
   }
   
 .nav-link-ltr:hover::before {
     width: 3%;
-  }
+}
+
 .log1{
     margin:auto !important
 }
@@ -108,7 +103,9 @@ p,a{
     height:20px;
     color:white
 }
-/******header starts here ***********/
+
+
+/******header ends here ***********/
 
 /***********home section starts here *********/
 #home-section{
@@ -577,7 +574,7 @@ padding:20px
 /************footer1*************/
 .fa{
     
-    border:2px solid #e9204f;
+    /* border:2px solid #e9204f; */
     padding:15px;
     border-radius:50%;
     margin:5px;
@@ -671,16 +668,16 @@ justify-content: flex-end;
 @media(max-width:374px){
    .nav-item{
        margin:5px;
-       border:2px solid white;
-       background-color:#e9204f ;
+       /* border:2px solid white;
+       background-color:#e9204f ; */
    }
-   .navbar-collapse{
+   /* .navbar-collapse{
     position: absolute;
     z-index:999;
-    /* background-color: #e9204f; */
+    background-color: #e9204f;
     top:100px;
     width:92%
-    }
+    } */
     .home-section-col-block1{
         height:auto;
        
@@ -708,7 +705,7 @@ justify-content: flex-end;
     }
     .fa{
         
-        border:2px solid #e9204f;
+        /* border:2px solid #e9204f; */
         padding:5px !important;
         border-radius:50%;
         margin:5px
@@ -809,22 +806,72 @@ justify-content: flex-end;
         .trademark p{
             text-align: center;
         }
+        .offcanvas-header{ display:block; }
+        .navbar-collapse {
+            position: fixed;
+            top:0; 
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            overflow-y: auto;
+            visibility: hidden;
+            background-color: black;
+            transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          }
+          .navbar-collapse.show {
+            visibility: visible;
+            transform: translateX(-100%);
+          }
+          #header1{
+            background-color: transparent !important;
+            position: fixed;
+            margin:2rem 2rem 0rem 0rem;
+            z-index: 1030;
+            width:100%
+        }
+        .navbar-nav {
+            padding-top:10%;
+            position: relative;
+        } 
+        .navbar-nav .nav-item{
+            padding:2rem 2rem
+        }
+        .navbar-nav .nav-link{
+            position:absolute;
+            right:15%;
+            margin:0.8rem 1rem;
+           opacity:1
+        }
+        @keyframes koylo {
+            0%{
+                position:absolute;
+                right:0%;
+                opacity:0.5
 
-    
+            }
+            100%{
+                position:absolute;
+                right:15%;
+                opacity:1
+
+            }
+        }
 }
 @media(min-width:375px) and (max-width:576px){
     .nav-item{
         margin:5px;
-        border:2px solid white;
-        background-color:#e9204f ;
+        /* border:2px solid white; */
+        /* background-color:#e9204f ; */
     }
-    .navbar-collapse{
+    /* .navbar-collapse{
         position: absolute;
         z-index:999;
-        /* background-color: #e9204f; */
+        background-color: #e9204f;
         top:100px;
         width:92%
-    }
+    } */
     .home-section-col-block1{
         height:auto;
        
@@ -942,7 +989,58 @@ justify-content: flex-end;
         .trademark p{
             text-align: center;
         }
+        .offcanvas-header{ display:block; }
+        .navbar-collapse {
+            position: fixed;
+            top:0; 
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            overflow-y: auto;
+            visibility: hidden;
+            background-color: black;
+            transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          }
+          .navbar-collapse.show {
+            visibility: visible;
+            transform: translateX(-100%);
+          }
+          #header1{
+            background-color: transparent !important;
+            position: fixed;
+            margin:2rem 2rem 0rem 0rem;
+            z-index: 1030;
+            width:100%
+        }
+        .navbar-nav {
+            padding-top:10%;
+            position: relative;
+        } 
+        .navbar-nav .nav-item{
+            padding:2rem 2rem
+        }
+        .navbar-nav .nav-link{
+            position:absolute;
+            right:15%;
+            margin:0.8rem 1rem;
+           opacity:1
+        }
+        @keyframes koylo {
+            0%{
+                position:absolute;
+                right:0%;
+                opacity:0.5
 
+            }
+            100%{
+                position:absolute;
+                right:15%;
+                opacity:1
+
+            }
+        }
 }
 @media(min-width:577px) and (max-width:760px){
     .nav-item{
@@ -950,13 +1048,13 @@ justify-content: flex-end;
         border:2px solid white;
         background-color:#e9204f ;
     }
-    .navbar-collapse{
+    /* .navbar-collapse{
         position: absolute;
         z-index:999;
-        /* background-color: #e9204f; */
+        background-color: #e9204f;
         top:100px;
         width:92%
-    }
+    } */
  
      #underline3,#undrline4,#underline5,#underline6{
         width:10%
@@ -1049,22 +1147,73 @@ justify-content: flex-end;
             -ms-transition: all 400ms ease-out;
             transition: all 400ms ease-out;
         }
+        .offcanvas-header{ display:block; }
+        .navbar-collapse {
+            position: fixed;
+            top:0; 
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            overflow-y: auto;
+            visibility: hidden;
+            background-color: black;
+            transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          }
+          .navbar-collapse.show {
+            visibility: visible;
+            transform: translateX(-100%);
+          }
+          #header1{
+            background-color: transparent !important;
+            position: fixed;
+            margin:2rem 2rem 0rem 0rem;
+            z-index: 1030;
+            width:95%
+        }
+        .navbar-nav {
+            padding-top:10%;
+            position: relative;
+        } 
+        .navbar-nav .nav-item{
+            padding:2rem 2rem
+        }
+        .navbar-nav .nav-link{
+            position:absolute;
+            right:35%;
+            margin:0.8rem 1rem;
+           opacity:1
+        }
+        @keyframes koylo {
+            0%{
+                position:absolute;
+                right:0%;
+                opacity:0.5
 
+            }
+            100%{
+                position:absolute;
+                right:35%;
+                opacity:1
 
+            }
+        }
 }
 @media(min-width:761px) and (max-width:992px){
     .nav-item{
         margin:5px;
-        border:2px solid white;
-        background-color:#e9204f ;
+        /* border:2px solid white;
+        background-color:#e9204f ; */
+        text-align:center
     }
-    .navbar-collapse{
+    /* .navbar-collapse{
         position: absolute;
         z-index:999;
-        /* background-color: #e9204f; */
+        background-color: #e9204f;
         top:100px;
         width:92%
-    }
+    } */
     .card-c{
         width:20.5em
     }
@@ -1163,6 +1312,58 @@ justify-content: flex-end;
             -o-transition: all 400ms ease-out;
             -ms-transition: all 400ms ease-out;
             transition: all 400ms ease-out;
+        }
+        .offcanvas-header{ display:block; }
+        .navbar-collapse {
+            position: fixed;
+            top:0; 
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            overflow-y: auto;
+            visibility: hidden;
+            background-color: black;
+            transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+          }
+          .navbar-collapse.show {
+            visibility: visible;
+            transform: translateX(-100%);
+          }
+          #header1{
+            background-color: transparent !important;
+            position: fixed;
+            margin:2rem 2rem 0rem 0rem;
+            z-index: 1030;
+            width:95%
+        }
+        .navbar-nav {
+            padding-top:10%;
+            position: relative;
+        } 
+        .navbar-nav .nav-item{
+            padding:2rem 2rem
+        }
+        .navbar-nav .nav-link{
+            position:absolute;
+            right:35%;
+            margin:0.8rem 1rem;
+           opacity:1
+        }
+        @keyframes koylo {
+            0%{
+                position:absolute;
+                right:0%;
+                opacity:0.5
+
+            }
+            100%{
+                position:absolute;
+                right:35%;
+                opacity:1
+
+            }
         }
 
 }
